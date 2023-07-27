@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Climax Resourcing</title>
+    <link rel="icon" href="../static/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Connect Multipurpose  Landing Page Template Template">
+    <meta name="keywords" content="Connect HTML Template, Connect Landing Page Template,  Landing Page Template">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="../static/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body class="boxed-layout">
+    <div class="wrapper">
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
+            <div class="container">
+                <a class="navbar-brand" href="#">Climax Resourcing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Who we are</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
+                        <li><a class="btn-nav js-scroll-trigger" href="/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- Navbar End -->
+
+        <div id="main" class="main">
+            <div class="home">
+                <div class="container">
+                    <div class="hero-content wow fadeIn">
+                        <div class="flex-split">
+                            <div class="container">
+                                <div class="f-image f-image-inverted">
+                                    <!--<img class="img-fluid" src="../static/images/banner.png" alt="Feature">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Hero End -->
+
+    <!--- Login/Register Section -->
+    <br>
+    <br>
+    <div class="containerr">
+        <div class="form-containerr">
+            <div class="left-containerr">
+                <div class="left-inner-containerr">
+                    <h3>Enter a new password and confirm it</h3>
+                    <br>
+                    <p id="demo"></p>
+                    <br>
+                </div>
+            </div>
+            <div class="right-containerr" id="searchnow">
+                <div class="right-inner-containerr">
+                    <form action="/reset_password/{{token}}" method="POST">
+                        <strong>
+                            <h2 class="lg-view" style="color: #383B61;">Fill in the form</h2>
+                        </strong>
+                        <h2 class="sm-view">Enter a new password and confirm it</h2>
+                        <input type="password" placeholder="Enter new password" name="new_pass" id="new_pass" required/>
+                        <input type="password" placeholder="Confirm password" name="new_pass_confirm" id="new_pass_confirm"  required/>
+                        <br>
+                        <br>
+                        <span id='message'></span>
+                        <button type="submit" >Reset password</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <div class="footer" style="clear: both;
+        position: relative; 
+        margin-bottom: auto;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 col-sm-12">
+                    <div class="footer-logo">
+                        <h2>C O N N E C T.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <ul class="footer-menu">
+                        <li><a href="/about_us">About</a> </li>
+                        <li><a href="/privacy">Privacy</a> </li>
+                        <li><a href="/terms">Terms</a> </li>
+                        <li><a href="/cookies">Cookies</a> </li>
+                        <li><a href="/capacity_project">Capacity projects</a> </li>
+                        <li><a href="/support">24h support</a> </li>
+                        <li><a href="/temp_staff">Staffing Solutions</a> </li>
+                        <li><a href="/contact">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-12">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#main"> <img class="img-fluid" src="static/icons/i1.png" alt="Icon"> </a> </li>
+                            <li><a href="#main"> <img class="img-fluid" src="static/icons/i2.png" alt="Icon"> </a> </li>
+                            <li><a href="#main"> <img class="img-fluid" src="static/icons/i3.png" alt="Icon"> </a> </li>
+                            <li><a href="#main"> <img class="img-fluid" src="static/icons/i4.png" alt="Icon"> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll To Top -->
+            <a id="back-top" class="back-to-top js-scroll-trigger" href="#main"></a>
+            <!-- Scroll To Top Ends-->
+        </div>
+    </div>
+    </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script src="static/js/jquery-2.1.1.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.validate.min.js"></script>
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/login.js"></script>
+    <script>
+        $('#new_pass, #new_pass_confirm').on('keyup', function () {
+                if ($('#new_pass').val() == $('#confirm_password').val()) {
+                    $('#message').html('Matching').css('color', 'green');
+                } else
+                    $('#message').html('Not Matching').css('color', 'red');
+            });
+</script>
+</body>
+
+</html>

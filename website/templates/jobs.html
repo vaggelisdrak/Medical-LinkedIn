@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Climax Resourcing</title>
+    <link rel="icon" href="static/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Connect Multipurpose  Landing Page Template Template">
+    <meta name="keywords" content="Connect HTML Template, Connect Landing Page Template,  Landing Page Template">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="static/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/css/owl.theme.css">
+    <link rel="stylesheet" href="static/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="static/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+ @keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-webkit-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-moz-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-o-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+body {
+    margin:0;
+}
+
+.category-name {
+    font-family: sans-serif;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+
+.card-category-1, .card-category-2, .card-category-3, .card-category-4, .card-category-5, .card-category-6 {
+    font-family: sans-serif;
+    margin-bottom: 45px;
+    text-align: center;
+}
+    .card-category-1 div, .card-category-2 div {
+        display:inline-block;
+    }
+
+    .card-category-1 > div, .card-category-2 > div:not(:last-child) {
+        margin: 10px 5px;
+        text-align: left;
+    }
+
+    /* Basic Card */
+    .basic-card {
+        width: 470px;
+        position: relative;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    }
+    
+        .basic-card .card-content {
+            padding: 30px;
+            height: 600px;
+        }
+
+        .basic-card .card-title {
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .basic-card .card-text {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .basic-card .card-link {
+            padding: 25px;
+            width: -webkit-fill-available;
+        }
+
+            .basic-card .card-link a {
+                text-decoration: none;
+                position: relative;
+                padding: 10px 0px;
+            }
+
+            .basic-card .card-link a:after {
+                top: 30px;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                width: 0;
+
+                -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            }
+
+            .basic-card .card-link a:hover:after { 
+                width: 100%; 
+                left: 0; 
+            }
+    
+    
+    
+    .basic-card-light {
+        border: 1px solid #eee;
+    }
+
+        .basic-card-light .card-title, .basic-card-light .card-link a {
+            font-weight: 800;
+            color: #3a3a47;
+        }
+
+
+        .basic-card-light .card-text {
+            color: #7b7b7b;
+        }
+
+        .basic-card-light .card-link {
+            border-top: 1px solid #eee;
+        }
+
+            .basic-card-light .card-link a:after {
+                background:#636363;
+            }
+
+    @media screen and (max-width:500px) {
+        .basic-card {
+        width:80%;
+        }
+    }
+    </style>
+  </head>
+  <body class="boxed-layout">
+    <div class="wrapper">
+      <!-- Navbar Section -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
+        <div class="container">
+          <a class="navbar-brand" href="#">Climax Resourcing</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Who we are</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Jobs</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#ahp">AHP</a></li>
+                  <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+                  <li><a class="dropdown-item" href="#nursing">Nursing</a></li>
+                  <li><a class="dropdown-item" href="#midwifery">Midwifery</a></li>
+                  <li><a class="dropdown-item" href="#social_care">Social Care</a></li>
+                  <!--<li><hr class="dropdown-divider"></li>-->
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#features">Services</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#reviews">Reviews</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
+              <li><a class="btn-nav js-scroll-trigger" href="/#cta">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- Navbar End -->
+
+      <div class="category-name"></div>
+        <div class="card-category-1">
+            <div class="basic-card basic-card-light" id="ahp">
+                <div class="card-content">
+                    <span class="card-title">Allied Healthcare Professional Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px;">
+                        Climax Resourcing is a leading Allied Health Professional staffing agency with a dedicated team of recruitment experts who specialize in finding you the best roles in various specialties. We have many exciting temporary and permanent opportunities for AHPs in hospitals and throughout the UK.
+                        So whether you are looking for physiotherapist jobs, speech, and language therapy roles, or radiographer opportunities, we have a vast array of functions to suit your lifestyle. Working through Climax Resourcing offers you an incredible range of benefits, including: 
+                        Working for one of the UK's most trusted recruitment agencies means working with excellent pay rates and 24-hour support. You can also expect fast track registration process and competitive benefits like referral bonuses. 
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+            <div class="basic-card basic-card-light" id="dental">
+                <div class="card-content">
+                    <span class="card-title">Dental Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px;">
+                        We've been placing dentists and dental nurses in NHS roles, and we're dedicated to providing the best possible service. We have a wide range of options available, whatever your preference, and our specialist consultants will work hard to get you the most attractive rates possible.
+                        Whether you're looking for a role as a dentist, dental assistant, dental therapist, dental hygienist, or dental nurse, we can offer you the security of working for an NHS-approved recruitment agency with a regular flow of new work and excellent pay rates. And if you refer someone to us who then takes up a placement through us, we'll give you a lucrative referral bonus!
+
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+            <div class="basic-card basic-card-light" id="doctors">
+                <div class="card-content">
+                    <span class="card-title">Doctor Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px;">
+                        Climax Resourcing is a leading healthcare staffing supplier in the United Kingdom. We offer doctor jobs that no one else can offer, with fantastic opportunities to join friendly teams and work with some of the UK's top professionals. We are always looking for talented junior, middle grade, and senior doctors for many different temporaries and permanent opportunities within the NHS and independent hospitals.
+                        Our clients offer excellent opportunities to work with some of the UK's top professionals who fully support your developmental needs. You'll also benefit from competitive pay rates, the first sight of shifts across multiple trusts, and task flexibility.
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+            <div class="basic-card basic-card-light" id="midwifery">
+                <div class="card-content">
+                    <span class="card-title">Midwifery Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px;">
+                        This is a gratifying role and one that is vital to the well-being of expectant mothers.
+                        At Climax Resourcing, we understand the importance of midwives and the vital role they play in society. That's why we're proud to offer a range of midwife jobs across the NHS and private healthcare sectors. We understand that every mother deserves the best possible care, and our dedicated professional team is committed to providing just that.
+                        If you're looking for your next midwife job, Climax has a range of exciting opportunities available. We offer competitive pay rates and next-day payroll so you can get paid quickly and easily. We also have a one-stop registration process so you can start your first shift in as little as a few days.
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+            <div class="basic-card basic-card-light" id="nursing">
+                <div class="card-content">
+                    <span class="card-title">Nursing Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px;">
+                        We’re Hiring! We have the perfect job for you if you're a nurse or healthcare assistant interested in gaining extra experience and improving your practice across various settings. As a partner--you'll enjoy first sight on available shifts and permanent positions with competitive pay rates that include holiday bonuses.
+                        Join our team and be a part of something different. We offer the best opportunities for nurses who want to work in an ever-changing environment with great benefits, including flexible shift options that fit your lifestyle!
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+            <div class="basic-card basic-card-light" id="social_care">
+                <div class="card-content">
+                    <span class="card-title">Social Care Jobs</span>
+                    <br>
+                    <p class="card-text" style="margin-top: 50px; overflow: auto; height: 400px;">
+                        Climax Resourcing offers a wide range of full and part-time social care opportunities in the residential, day center, and supported living settings. The roles provide flexibility to fit your family life, social commitments, or studies. They will provide you with experience plus role satisfaction from making a real difference in vulnerable people’s lives. 
+                        Our roles involve working with adults, young people, children, and the elderly with mental health issues challenging behaviors, physical or learning disabilities, or Dementia/Alzheimer's, enabling them to lead fulfilled lives and gain further independence. Whilst social care includes personal care and support to vulnerable people and children, care assistants and support workers will offer so much more, including emotional support. 
+                        The work can be gratifying. You may have to deal with difficult situations, but knowing that you are positively impacting somebody’s life makes the job worthwhile. Care work can be extremely fulfilling and satisfying. 
+                        If you are looking for a career that is both meaningful and challenging, then look no further than social care. At Climax Resourcing, we always seek talented and dedicated individuals to join our team. So why not apply today?
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="/#searchnow" title="Read Full"><span style="color:  #21bf73;">Apply now</span></a>
+                </div>
+            </div>
+
+        </div>
+    
+              <!-- Footer -->
+              <div class="footer" style="position: relative;
+              left: 0;
+              bottom: 0;
+              width: 100%;">
+                <div class="container">
+                  <div class="row text-center">
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                      <div class="footer-logo">
+                        <h2>C O N N E C T.</h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <ul class="footer-menu">
+                        <li><a href="/about_us">About</a> </li>
+                        <li><a href="/privacy">Privacy</a> </li>
+                        <li><a href="/terms">Terms</a> </li>
+                        <li><a href="/cookies">Cookies</a> </li>
+                        <li><a href="/capacity_project">Capacity projects</a> </li>
+                        <li><a href="/support">24h support</a> </li>
+                        <li><a href="/temp_staff">Staffing Solutions</a> </li>
+                        <li><a href="/contact">Contact</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                      <div class="footer-links">
+                        <ul>
+                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i1.png" alt="Icon"> </a> </li>
+                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i2.png" alt="Icon"> </a> </li>
+                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i3.png" alt="Icon"> </a> </li>
+                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i4.png" alt="Icon"> </a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Scroll To Top -->
+                    <a id="back-top" class="back-to-top js-scroll-trigger" href="#main"></a>
+                <!-- Scroll To Top Ends-->
+                </div>
+              </div>
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script src="static/js/jquery-2.1.1.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.validate.min.js"></script>
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+  </body>
+</html>
