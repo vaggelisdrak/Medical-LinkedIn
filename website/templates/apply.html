@@ -75,13 +75,19 @@
       <!-- Navbar Section -->
       <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
         <div class="container">
-          <a class="navbar-brand" href="#">Climax Resourcing</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+          <a href="/" class="navbar-brand">
+            <img src="../static/images/logo copy.svg" width="136" height="46" alt="Climaxx home">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar-right">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Who we are</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Services</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Reviews</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
               <li><a class="btn-nav js-scroll-trigger" href="/#cta">Contact Us</a></li>
             </ul>
           </div>
@@ -107,7 +113,7 @@
                     <input type="text" placeholder="Last name" name="last_name" required/>
                     <input type="email" placeholder="Email address" name="email" required id="contact-user"/>
                     <input type="tel" placeholder="Phone number" name="phone_num" required/>
-                    <label for="file-upload" class="custom-file-upload" style="border: 1px solid #21bf73;
+                    <label for="file-upload" class="custom-file-upload" style="border: 1px solid hsl(182, 100%, 35%);
                     display: inline-block;
                     padding: 6px 12px;
                     margin-top: 5px;
@@ -118,7 +124,7 @@
                     width: 150px;;
                     ">
                     <!--<img src="../static/images/upload_cv-512.webp" style="width: 50px; height: 50px;" >-->
-                    Upload your CV
+                     Upload your CV 
                     </label>
                     <!--<button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>-->
                     <input id="file-upload" type="file" name="pdf" style="display: none;" accept=".pdf,.doc" required/>
@@ -128,12 +134,12 @@
                     <br>
                     <br>
                     <br>
-                    <button type="submit" style="width: 100%;">Send application</button>
+                    <button type="submit" style="width: 100%; background-color: hsl(182, 100%, 35%);;">Send application</button>
                   </form>
                   <p class="card-text" id="contact-message"></p>
             </div>
             <div class="right-div right-text" style="margin-right: 0px;">
-                <strong><h2 style="text-align: center;">Job advertisment <span style="color: #21bf73;"> ID={{ad.id}}</span></h2></strong>
+                <strong><h2 style="text-align: center;">Job advertisment <span style="color: hsl(182, 100%, 35%);"> ID={{ad.id}}</span></h2></strong>
                 <hr>
                 <div class="card" style="width: auto;">
                     <div class="card-body">
@@ -142,10 +148,10 @@
                       <h6 class="card-subtitle mb-2 text-muted">job desciption</h6>
                       <p class="card-text">{{ad.job_desc}}</p>
                       <hr>
-                      <a href="#" class="card-link">{{ad.location}}</a>
-                      <a href="#" class="card-link">{{ad.salary}}/{{ad.salary_per}}</a>
-                      <a href="#" class="card-link">{{ad.contract_length}}</a>
-                      <a href="#" class="card-link">{{ad.org_name}}</a>
+                      <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{ad.location}}</a>
+                      <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{ad.salary}}/{{ad.salary_per}}</a>
+                      <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{ad.contract_length}}</a>
+                      <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{ad.org_name}}</a>
                       <br>
                     </div>
                   </div>
@@ -153,7 +159,7 @@
                     <div class="card-body">
                         <h6 class="card-subtitle mb-2 text-muted">Benefits & Requirements</h6>
                         <br>
-                        <a href="/download/{{ad.filename}}">View file</a>
+                        <a href="/download/{{ad.filename}}" style="color: hsl(182, 100%, 35%);">View file</a>
                     </div>
                   </div>
             </div>

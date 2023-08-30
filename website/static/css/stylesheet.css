@@ -232,19 +232,19 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #8a8a8a;
+  color: black;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .navbar-nav .nav-item .nav-link:focus {
-  color: #8a8a8a;
+  color: black;
 }
 
 .btn-nav {
 	display: inline-block;
 	height: 38px;
-	padding: 0 30px;
+	padding: 1px 30px;
 	text-align: center;
 	font-size: 12px;
 	font-weight: 600;
@@ -255,10 +255,8 @@ body {
 	text-decoration: none !important;
 	white-space: nowrap;
 	cursor: pointer;
-	background-color: transparent;
-	background: transparent;
-	color: #222222;
-	border: 2px solid #8a8a8a !important;
+	background-color: hsl(182, 100%, 35%);
+	color: white;
 	border-radius: 5px;
 	box-sizing: border-box;
 	-webkit-transition: 0.2s;
@@ -268,14 +266,12 @@ body {
 
 .btn-nav:hover {
 	color: #FFFFFF;
-	background: #21bf73;
-  border: 2px solid #21bf73 !important;
+	background: black;
 }
 
 .btn-nav:focus, .btn-nav:active {
-	background: #21bf73;
+	background: hsl(182, 100%, 35%);
 	color: #FFFFFF;
-  border: 2px solid #21bf73 !important;
 }
 
 /*---- Navbar Alt -----*/
@@ -559,13 +555,13 @@ input, select {
 
 
 input:focus, select:focus{
-  outline:1px solid #21bf73;
+  outline:1px solid hsl(182, 100%, 35%);;
 }
 
 button {
 	border-radius: 20px;
-	border: 1px solid #21bf73;
-	background-color: #21bf73;
+	border: 1px solid hsl(182, 100%, 35%);;
+	background-color: hsl(182, 100%, 35%);;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -578,7 +574,7 @@ button {
 }
 
 option{
-	color: #21bf73;
+	color: hsl(182, 100%, 35%);;
 	opacity: 0.7;
 }
 

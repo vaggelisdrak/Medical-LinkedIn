@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Climax Resourcing</title>
     <link rel="icon" href="../static/icons/favicon.png" type="image/png" sizes="16x16">
@@ -8,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Connect Multipurpose  Landing Page Template Template">
     <meta name="keywords" content="Connect HTML Template, Connect Landing Page Template,  Landing Page Template">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500"
+        rel="stylesheet">
     <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="../static/css/animate.css"> <!-- Resource style -->
     <link rel="stylesheet" href="../static/css/owl.carousel.css">
@@ -18,503 +20,534 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  </head>
-  <style>
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-.autocomplete {
-  font-size:15px;
-    
-}
+    .autocomplete {
+        font-size: 15px;
 
-.containerrr
-{
-  width: 100%;
-  text-align: center;
-  padding: 15px;  
-}
-.left-div
-{
-  display: inline-block;
-  max-width: 350px;
-  text-align: left;
-  padding: 30px;
-  background-color: #f0f5f9;
-  border-radius: 3px;
-  margin: 15px;
-  vertical-align: top;
-  /*height: 450px;
+    }
+
+    .containerrr {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .left-div {
+        display: inline-block;
+        max-width: 350px;
+        text-align: left;
+        padding: 30px;
+        background-color: #f0f5f9;
+        border-radius: 3px;
+        margin: 15px;
+        vertical-align: top;
+        /*height: 450px;
   max-height: 750px;*/
-}
-.right-div
-{
-  display: inline-block;
-  max-width: 700px;
-  text-align: left;
-  padding: 30px;
-  background-color: #f0f5f9;
-  border-radius: 3px;
-  margin: 15px;
-  margin-right: 30px;
-  margin-left: 25px;
-  height: 750px;
-}
-.left-text, .right-text
-{
-  font: 14px 'Open Sans';
-	color: #333;
-}
-
-#green-buttons{
-  display: flex;
-}
-@media screen and (max-width: 600px) 
-{
-  .left-div, .right-div
-    {
-       max-width: 100%;
-    }
-    .right-div{
-    margin: auto;
-    padding: 5px;
-    margin-top: 10px;
-  }
-}
-#green-buttons{
-  display: inline;
-}
-
-@media screen and (min-width: 1000px) 
-{
-  #green-buttons{
-  display: flex;
-}
-  .left-div, .right-div
-    {
-       width: 50%;
     }
 
-}
+    .right-div {
+        display: inline-block;
+        max-width: 700px;
+        text-align: left;
+        padding: 30px;
+        background-color: #f0f5f9;
+        border-radius: 15px;
+        margin: 15px;
+        margin-right: 30px;
+        margin-left: 25px;
+        height: 800px;
+    }
 
-/* The container */
-.containe {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+    .left-text,
+    .right-text {
+        font: 14px 'Open Sans';
+        color: #333;
+    }
 
-/* Hide the browser's default checkbox */
-.containe input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+    #green-buttons {
+        display: flex;
+    }
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-}
+    @media screen and (max-width: 600px) {
 
-/* On mouse-over, add a grey background color */
-.containe:hover input ~ .checkmark {
-  background-color: #ccc;
-}
+        .left-div,
+        .right-div {
+            max-width: 100%;
+        }
 
-/* When the checkbox is checked, add a blue background */
-.containe input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
+        .right-div {
+            margin: 10px;
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+            padding: 5px;
+            margin-top: 10px;
+        }
+    }
 
-/* Show the checkmark when checked */
-.containe input:checked ~ .checkmark:after {
-  display: block;
-}
+    #green-buttons {
+        display: inline;
+    }
 
-/* Style the checkmark/indicator */
-.containe .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+    @media screen and (min-width: 1000px) {
+        #green-buttons {
+            display: flex;
+        }
 
-.slider {
-  /*-webkit-appearance: none;*/
-  width: 100%;
-  height: 5px;
-  border-radius: 5px;
-  background: #f0f5f9;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
+        .left-div,
+        .right-div {
+            width: 50%;
+        }
 
-.slider:hover {
-  opacity: 1;
-}
+    }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #2196F3;
-  cursor: pointer;
-}
+    /* The container */
+    .containe {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04AA6D;
-  cursor: pointer;
-}
-  </style>
-  <body class="boxed-layout">
-    <div class="wrapper">
-      <!-- Navbar Section -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
-        <div class="container">
-          <a class="navbar-brand" href="/">Climax Resourcing</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto navbar-right">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Who we are</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Services</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Reviews</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
-              <li><a class="btn-nav js-scroll-trigger" href="/#cta">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav><!-- Navbar End -->
-        <br>
-        <br>
-        <br>
-        <br>
+    /* Hide the browser's default checkbox */
+    .containe input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
 
-        <div class="containerrr" style="width: auto;">
-            <div class="left-div left-text" style="background-color: white; box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%); border-radius: 15px;">
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containe:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .containe input:checked~.checkmark {
+        background-color: hsl(182, 100%, 35%);
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .containe input:checked~.checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .containe .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .slider {
+        /*-webkit-appearance: none;*/
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background: #f0f5f9;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: hsl(182, 100%, 35%);;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: hsl(182, 100%, 35%);;
+        cursor: pointer;
+    }
+</style>
+
+<body class="boxed-layout" style="background-image: url('./static/images/hero-bg.png'); background-color: hsl(186, 100%, 19%);">
+    <div class="wrapper" >
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="../static/images/logo copy.svg" width="136" height="46" alt="Climaxx home">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Who we are</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
+                        <li><a class="btn-nav js-scroll-trigger" href="/#cta">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- Navbar End -->
+
+        <div class="containerrr" style="width: auto; margin-top: 100px;">
+            <div class="left-div left-text"
+                style="background-color: white; box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%); border-radius: 15px;">
                 <h2 style="margin-left: 28%;">Find a job</h2>
                 <hr>
                 <form action="/search" method="POST">
                     <div class="social-containerr">
-                      <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                      <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <input type="text" placeholder="Job title / Keywords" name="keywords" id="keywords"/>
+                    <input type="text" placeholder="Job title / Keywords" name="keywords" id="keywords" />
                     <select placeholder="Occupation" name="occupation" id="occ">
-                      <option value="" disabled selected style="color: #999;">Occupation</option>
-                      <option value="ahp">AHP</option>
-                      <option value="doctors">Doctors</option>
-                      <option value="dental">Dental</option>
-                      <option value="midwifery">Midwifery</option>
-                      <option value="social_care">Social Care</option>
-                      <option value="nursing">Nursing</option>
+                        <option value="" disabled selected style="color: #999;">Occupation</option>
+                        <option value="ahp">AHP</option>
+                        <option value="doctors">Doctors</option>
+                        <option value="dental">Dental</option>
+                        <option value="midwifery">Midwifery</option>
+                        <option value="social_care">Social Care</option>
+                        <option value="nursing">Nursing</option>
                     </select>
                     <select placeholder="Speciality" name="specialty" id="spec">
                         <option value="" disabled selected style="color: #999;">Specialty</option>
                     </select>
-                    <input  id="location" type="text" placeholder="Location" name="location" />
+                    <input id="location" type="text" placeholder="Location" name="location" />
                     <br>
                     <br>
                     <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 13px; text-decoration: underline; color: #2196F3;">
-                            Show Advanced Search &#8595;
-                          </a>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                          <div class="field field-salary ">
-                            <label for="min-salary">Salary <p>(Default: Monthly)</p></label>
-                            <br>
-                            <input class="input-sml" id="min-salary" min="0" name="min-salary" step="any" type="number" >
-                            <label for="max-salary" class="inline">to</label>
-                            <input class="input-sml" id="max-salary" min="0" name="max-salary" step="any" type="number" >
-                            <label for="salary-per" class="inline">per</label>
-                            <select class="select-sml" id="salary-per" name="salary_per">
-                              <option value="All" selected>All</option>
-                              <option value="Annum">Annum</option>
-                              <option value="Day">Day</option>
-                              <option value="Hour">Hour</option>
-                              <option value="Month">Month</option>
-                              <option value="Week">Week</option>
-                            </select>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <a class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    style="font-size: 13px; text-decoration: underline; color: hsl(182, 100%, 35%);">
+                                    Show Advanced Search &#8595;
+                                </a>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="field field-salary ">
+                                        <label for="min-salary">Salary <p>(Default: Monthly)</p></label>
+                                        <br>
+                                        <input class="input-sml" id="min-salary" min="0" name="min-salary" step="any"
+                                            type="number">
+                                        <label for="max-salary" class="inline">to</label>
+                                        <input class="input-sml" id="max-salary" min="0" name="max-salary" step="any"
+                                            type="number">
+                                        <label for="salary-per" class="inline">per</label>
+                                        <select class="select-sml" id="salary-per" name="salary_per">
+                                            <option value="All" selected>All</option>
+                                            <option value="Annum">Annum</option>
+                                            <option value="Day">Day</option>
+                                            <option value="Hour">Hour</option>
+                                            <option value="Month">Month</option>
+                                            <option value="Week">Week</option>
+                                        </select>
 
-                        </div>
-                          <label class="containe"><p>Permanent</p>
-                            <input type="checkbox" name="perm">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="containe"><p>Temporary</p>
-                            <input type="checkbox" name="temp">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="containe"><p>Full time</p>
-                            <input type="checkbox" name="full">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="containe"><p>Part time</p>
-                            <input type="checkbox" name="part">
-                            <span class="checkmark"></span>
-                          </label>
-                          <!--<label for="customRange1" class="form-label">Within</label>
+                                    </div>
+                                    <label class="containe">
+                                        <p>Permanent</p>
+                                        <input type="checkbox" name="perm">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="containe">
+                                        <p>Temporary</p>
+                                        <input type="checkbox" name="temp">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="containe">
+                                        <p>Full time</p>
+                                        <input type="checkbox" name="full">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="containe">
+                                        <p>Part time</p>
+                                        <input type="checkbox" name="part">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <!--<label for="customRange1" class="form-label">Within</label>
                           <div>
                             <input type="range" min="1" max="200" value="50" class="slider" id="myRange" style="accent-color: #2196F3;" name="range">
                             <p>Miles: <span id="demo"></span></p>
                           </div>-->
-                          </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <a class="accordion-button" type="button" style="font-size: 13px; color: #2196F3; cursor: pointer;" onclick="reset();">
-                      Reset
+                    <a class="accordion-button" type="button" style="font-size: 13px; color: hsl(182, 100%, 35%); cursor: pointer;"
+                        onclick="reset();">
+                        Reset
                     </a>
-                    <button type="submit" style="margin-left: 50%; margin-top: 10px;" onclick="saveData()">Search</button>
-                  </form>
+                    <button type="submit" style="margin-left: 50%; margin-top: 10px; background-color: hsl(182, 100%, 35%);" 
+                        onclick="saveData()">Search</button>
+                </form>
             </div>
             <div class="right-div right-text" style="overflow: auto; ">
                 <div style="display: flex;">
-                  <div style="display: flex;">
-                    <div>
-                    {% if l==1 %}
-                    <strong>
-                      <h2 style="text-align: center;">{{l}} job was found</h2></i>
-                    </strong>
-                    {% else %}
-                    <strong>
-                      <h2 style="text-align: center;">{{l}} jobs were found</h2>
-                    </strong>
-                    {% endif %}
-                    </div>
-                  </div>
-                <span style="margin-left: 35%;">
-                  <div id="green-buttons">
-                  <a href="/view_map" class="btn btn-primary" type="button" 
-                    style="background-color: #21bf73; padding: 5px; font-family: 'Montserrat'; margin-right:10px;">View on <i class='bx bx-map'></i>
-                  </a>
-                  <form  method="POST" style="display: inline-block;">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #21bf73; padding: 5px; font-family: 'Montserrat';">
-                          Sort by
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dmenu">
-                          <a class="dropdown-item" href="/category/rel" style="color: #383B61;" value="rel">Relevance</a>
-                          <a class="dropdown-item" href="/category/date"  style="color: #383B61;" value="date">Date (most recent)</a>
-                          <a class="dropdown-item" href="/category/sal_asc"  style="color: #383B61;" value="sal_asc">Salary (low to high)</a>
-                          <a class="dropdown-item" href="/category/sal_desc" style="color: #383B61;" value="sal_desc">Salary (high to low)</a>
+                    <div style="display: flex;">
+                        <div>
+                            {% if l==1 %}
+                            <strong>
+                                <h2 style="text-align: center;">{{l}} job was found</h2></i>
+                            </strong>
+                            {% else %}
+                            <strong>
+                                <h2 style="text-align: center;">{{l}} jobs were found</h2>
+                            </strong>
+                            {% endif %}
                         </div>
-                      </div>
-                    </form>
                     </div>
-                </span>
+                    <span style="margin-left: 35%;">
+                        <div id="green-buttons">
+                            <a href="/view_map" class="btn btn-primary" type="button"
+                                style="background-color: hsl(182, 100%, 35%); padding: 5px; font-family: 'Montserrat'; margin-right:10px;">View
+                                on <i class='bx bx-map'></i>
+                            </a>
+                            <form method="POST" style="display: inline-block;">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"
+                                        style="background-color: hsl(182, 100%, 35%); padding: 5px; font-family: 'Montserrat';">
+                                        Sort by
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dmenu">
+                                        <a class="dropdown-item" href="/category/rel" style="color: #383B61;"
+                                            value="rel">Relevance</a>
+                                        <a class="dropdown-item" href="/category/date" style="color: #383B61;"
+                                            value="date">Date (most recent)</a>
+                                        <a class="dropdown-item" href="/category/sal_asc" style="color: #383B61;"
+                                            value="sal_asc">Salary (low to high)</a>
+                                        <a class="dropdown-item" href="/category/sal_desc" style="color: #383B61;"
+                                            value="sal_desc">Salary (high to low)</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </span>
+                    <hr>
+                </div>
                 <hr>
-            </div>
-            <hr>
-            {% for i in search_res[0] %}
-              {% if i.visibility == 1%}
-                  <div class="card" style="width: auto;">
+                {% for i in search_res[0] %}
+                {% if i.visibility == 1%}
+                <div class="card" style="width: auto;">
                     <div class="card-body">
-                      <a href="#">
-                        <h5 class="card-title" style="color: #333347; font-weight: 600; text-transform: capitalize;">{{i.staff_type}}-{{i.specialty}}</h5>
-                      </a>
-                      {% set ns = namespace(c = 0) %}
-                      {% for j in i.requests %}
+                        <a href="#">
+                            <h5 class="card-title"
+                                style="color: #333347; font-weight: 600; text-transform: capitalize;">
+                                {{i.staff_type}}-{{i.specialty}}</h5>
+                        </a>
+                        {% set ns = namespace(c = 0) %}
+                        {% for j in i.requests %}
                         {% set ns.c = ns.c + 1 %}
-                      {% endfor %}
-                      <a href="#">
-                        <h5 class="card-title" style="color: #333347; font-weight: 600; text-transform: capitalize; position: absolute;top: 20px;right: 20px;">
-                          {{i.date_posted}}</h5>
-                      </a>
-                      <br>
-                      <h6 class="card-subtitle mb-2 text-muted">job desciption</h6>
-                      <p class="card-text">{{i.job_desc}}</p>
-                      <hr>
-                      <a href="#" class="card-link">{{i.location}}</a>
-                      <a href="#" class="card-link">{{i.salary}}/{{i.salary_per}}</a>
-                      <a href="#" class="card-link">{{i.contract_length}}</a>
-                      <a href="/apply/{{i.id}}"  class="card-link" style="border: 2px solid #04AA6D; padding: 2px; color: #2196F3; border-radius: 5px;">Apply</a>
-                      <a href="#" class="card-link">{{ns.c}} Applications</a>
+                        {% endfor %}
+                        <a href="#">
+                            <h5 class="card-title"
+                                style="color: #333347; font-weight: 600; text-transform: capitalize; position: absolute;top: 20px;right: 20px;">
+                                {{i.date_posted}}</h5>
+                        </a>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">job desciption</h6>
+                        <p class="card-text">{{i.job_desc}}</p>
+                        <hr>
+                        <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{i.location}}</a>
+                        <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{i.salary}}/{{i.salary_per}}</a>
+                        <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{i.contract_length}}</a>
+                        <a href="#" class="card-link" style="color: hsl(182, 100%, 35%);">{{ns.c}} Applications</a>
+                        <a href="/apply/{{i.id}}" class="card-link"
+                            style="border: 2px solid black; padding: 3px; color: white; border-radius: 5px; background-color:hsl(182, 100%, 35%); position: absolute;right: 20px;"">Apply</a>
                     </div>
-                  </div>
-                  <br>
+                </div>
+                <br>
                 {% endif %}
-              {% endfor %}
-        </div>
-        <script>
+                {% endfor %}
+            </div>
+            <script>
 
-        </script>
+            </script>
 
-        <br>
-        <br>
-    <!-- Jquery and Js Plugins -->
-    <script src="../static/js/jquery-2.1.1.js"></script>
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/jquery.validate.min.js"></script>
-    <script src="../static/js/plugins.js"></script>
-    <script src="../static/js/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src ="../static/js/options.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-      $(function () {
-        $.ajax({
-          url: '{{ url_for("employees.autocomplete") }}'
-        }).done(function (data) {
-          console.log(data)
-          $('#location').autocomplete({
-            source: data,
-            minLength: 1,
-            classes: {
-              "ui-autocomplete": "autocomplete"
-            }
-          });
-        });
-      });
-    </script>
-    </script>
-    <script>
-      function loadData() {
-        document.getElementById("keywords").value = localStorage.getItem("keyword");
-        document.getElementById("occ").value = localStorage.getItem("occupation");
-        document.getElementById("location").value = localStorage.getItem("location");
-        //document.getElementById("speciality").value = localStorage.getItem("speciality");
-        select = document.getElementById('spec');
-        console.log(select);
-        const occ = document.getElementById('occ');
+            <br>
+            <br>
+            <!-- Jquery and Js Plugins -->
+            <script src="../static/js/jquery-2.1.1.js"></script>
+            <script src="../../static/js/popper.min.js"></script>
+            <script src="../../static/js/bootstrap.min.js"></script>
+            <script src="../../static/js/jquery.validate.min.js"></script>
+            <script src="../../static/js/plugins.js"></script>
+            <script src="../../static/js/login.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+                crossorigin="anonymous"></script>
+            <script src="../static/js/options.js" defer></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <script>
+                $(function () {
+                    $.ajax({
+                        url: '{{ url_for("employees.autocomplete") }}'
+                    }).done(function (data) {
+                        console.log(data)
+                        $('#location').autocomplete({
+                            source: data,
+                            minLength: 1,
+                            classes: {
+                                "ui-autocomplete": "autocomplete"
+                            }
+                        });
+                    });
+                });
+            </script>
+            </script>
+            <script>
+                function loadData() {
+                    document.getElementById("keywords").value = localStorage.getItem("keyword");
+                    document.getElementById("occ").value = localStorage.getItem("occupation");
+                    document.getElementById("location").value = localStorage.getItem("location");
+                    //document.getElementById("speciality").value = localStorage.getItem("speciality");
+                    select = document.getElementById('spec');
+                    console.log(select);
+                    const occ = document.getElementById('occ');
 
 
-        function handleChange() {
+                    function handleChange() {
 
-          var el = localStorage.getItem("occupation")
+                        var el = localStorage.getItem("occupation")
 
-          if (el != '') {
-            removeOptions(document.getElementById('spec'));
-          }
+                        if (el != '') {
+                            removeOptions(document.getElementById('spec'));
+                        }
 
-          if (el == "doctors") {
-            theArray = ['All', 'Accident and emergency', 'Anaesthesia', 'Cardiology', 'Dermatology', 'Diabetes', 'Ear Nose and Throat', 'Gastroenterology', 'General Practitioner', 'Haematology',
-              'Histopathology', 'Infectious Disease', 'Intensive Care', 'MAU', 'Medicine', 'Microbiology', 'Neonates', 'Nephrology', 'Neurology', 'Obstetrics', 'Oncology', 'Opthalmology',
-              'Otolaryngology', 'Orthopaedics', 'Paediatrics', 'Pathology', 'Psychiatry', 'Radiology', 'Surgery', 'Urology']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
+                        if (el == "doctors") {
+                            theArray = ['All', 'Accident and emergency', 'Anaesthesia', 'Cardiology', 'Dermatology', 'Diabetes', 'Ear Nose and Throat', 'Gastroenterology', 'General Practitioner', 'Haematology',
+                                'Histopathology', 'Infectious Disease', 'Intensive Care', 'MAU', 'Medicine', 'Microbiology', 'Neonates', 'Nephrology', 'Neurology', 'Obstetrics', 'Oncology', 'Opthalmology',
+                                'Otolaryngology', 'Orthopaedics', 'Paediatrics', 'Pathology', 'Psychiatry', 'Radiology', 'Surgery', 'Urology']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
 
-          else if (el == "nursing") {
-            theArray = ['All', 'Accident and emergency', 'Adults', 'Children', 'Community', 'Intensive Care', 'Learning Disabilities', 'Mental Health', 'Neonatal', 'Prison', 'General nurse', 'Theatre']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
+                        else if (el == "nursing") {
+                            theArray = ['All', 'Accident and emergency', 'Adults', 'Children', 'Community', 'Intensive Care', 'Learning Disabilities', 'Mental Health', 'Neonatal', 'Prison', 'General nurse', 'Theatre']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
 
-          else if (el == "dental") {
-            theArray = ['All', 'Orthodontics', 'Surgery', 'Periodontics', 'Prosthodontics', 'Endodontics']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
+                        else if (el == "dental") {
+                            theArray = ['All', 'Orthodontics', 'Surgery', 'Periodontics', 'Prosthodontics', 'Endodontics']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
 
-          else if (el == "midwifery") {
-            theArray = ['All']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
+                        else if (el == "midwifery") {
+                            theArray = ['All']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
 
-          else if (el == "social_care") {
-            theArray = ['All']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
+                        else if (el == "social_care") {
+                            theArray = ['All']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
 
-          else if (el == "ahp") {
-            theArray = ['All', 'Audiology', 'Biomedical science', 'Clinical assesor', 'Dietitan', 'Medical lab', 'Occupational therapy', 'Orthoptics', 'Paramedics', 'Physiotherapy', 'Podiatrist', 'Prosthetist',
-              'Radiography', 'Sonography', 'Logotherapy', 'Speech therapy']
-            for (const element of theArray) {
-              var opt = document.createElement('option');
-              opt.value = element;
-              opt.innerHTML = element;
-              select.appendChild(opt);
-            }
-          }
-        };
-        handleChange();
-        document.getElementById("spec").value = localStorage.getItem("speciality");
+                        else if (el == "ahp") {
+                            theArray = ['All', 'Audiology', 'Biomedical science', 'Clinical assesor', 'Dietitan', 'Medical lab', 'Occupational therapy', 'Orthoptics', 'Paramedics', 'Physiotherapy', 'Podiatrist', 'Prosthetist',
+                                'Radiography', 'Sonography', 'Logotherapy', 'Speech therapy']
+                            for (const element of theArray) {
+                                var opt = document.createElement('option');
+                                opt.value = element;
+                                opt.innerHTML = element;
+                                select.appendChild(opt);
+                            }
+                        }
+                    };
+                    handleChange();
+                    document.getElementById("spec").value = localStorage.getItem("speciality");
 
-      }
-      window.onload = loadData;
-    </script>
-    <script>
-      function saveData() {
-        var keywords = document.getElementById("keywords").value;
-        var occupation = document.getElementById("occ").value;
-        var speciality = document.getElementById("spec").value;
-        var location = document.getElementById("location").value;
+                }
+                window.onload = loadData;
+            </script>
+            <script>
+                function saveData() {
+                    var keywords = document.getElementById("keywords").value;
+                    var occupation = document.getElementById("occ").value;
+                    var speciality = document.getElementById("spec").value;
+                    var location = document.getElementById("location").value;
 
-        localStorage.setItem("keyword", keywords);
-        localStorage.setItem("occupation", occupation);
-        localStorage.setItem("speciality", speciality);
-        localStorage.setItem("location", location);
-      }
-    </script>
-    <script>
-      function reset(){
-        document.getElementById("keywords").value = "";
-        document.getElementById("occ").value;
-        document.getElementById("spec").value;
-        document.getElementById("location").value = "";
-      }
-    </script>
-  </body>
-</html>
+                    localStorage.setItem("keyword", keywords);
+                    localStorage.setItem("occupation", occupation);
+                    localStorage.setItem("speciality", speciality);
+                    localStorage.setItem("location", location);
+                }
+            </script>
+            <script>
+                function reset() {
+                    document.getElementById("keywords").value = "";
+                    document.getElementById("occ").value;
+                    document.getElementById("spec").value;
+                    document.getElementById("location").value = "";
+                }
+            </script>
+            </body>
+
+            </html>

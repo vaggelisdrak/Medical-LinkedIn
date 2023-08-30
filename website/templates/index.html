@@ -1,592 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Climax Resourcing</title>
-    <link rel="icon" href="static/icons/favicon.png" type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Connect Multipurpose  Landing Page Template Template">
-    <meta name="keywords" content="Connect HTML Template, Connect Landing Page Template,  Landing Page Template">
-    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
-    <link rel="stylesheet" href="static/css/animate.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="static/css/owl.carousel.css">
-    <link rel="stylesheet" href="static/css/owl.theme.css">
-    <link rel="stylesheet" href="static/css/ionicons.min.css"> <!-- Resource style -->
-    <link href="static/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
-    <style>
-      .dropdown-menu {
-      padding: 0;
-      margin: 0;
-      border: 1px solid rgba(0,0,0,.15);
-      border-radius: 2px;
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
-      -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
-    }
-    .open>.dropdown-toggle.btn-default:focus, 
-    .open>.dropdown-toggle.btn-default:hover{
-      background-color: #ccc;
-      border-color: #ccc;
-    }
-    .dropdown-menu .divider {
-      height: 1px;
-      margin: 8.5px 0;
-      overflow: hidden;
-      background-color: #efefef;
-    }
-    .open>.btn-default.dropdown-toggle {
-        background-color: #bfcad0;
-        border-color: #bfcad0;
-        color: #fff
-    }
 
-    .open>.btn-default.dropdown-toggle:hover,
-    .open>.btn-default.dropdown-toggle:focus,
-    .open>.btn-default.dropdown-toggle:active:focus {
-        background-color: #bfcad0;
-        border-color: #bfcad0;
-        color: #fff
-    }
-    </style>
-  </head>
-  <body class="boxed-layout">
-    <div class="wrapper">
-      <!-- Navbar Section -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border">
-        <div class="container">
-          <a class="navbar-brand" href="#">Climax Resourcing</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Climaxx - home</title>
+  <meta name="title" content="Climaxx - home">
+  <meta name="description" content="This is a madical html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./static/images/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./static/images/hero-banner.png">
+  <link rel="preload" as="image" href="./static/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="../static/images/logo.svg" width="136" height="46" alt="Climaxx home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="../static/images/logo.svg" width="136" height="46" alt="Climaxx home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto navbar-right">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Who we are</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Jobs</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/jobs#ahp">AHP</a></li>
-                  <li><a class="dropdown-item" href="/jobs#doctors">Doctors</a></li>
-                  <li><a class="dropdown-item" href="/jobs#nursing">Nursing</a></li>
-                  <li><a class="dropdown-item" href="/jobs#midwifery">Midwifery</a></li>
-                  <li><a class="dropdown-item" href="/jobs#social_care">Social Care</a></li>
-                  <!--<li><hr class="dropdown-divider"></li>-->
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Services</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews">Reviews</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about_us">About us</a></li>
-              <li><a class="btn-nav js-scroll-trigger" href="#cta">Contact Us</a></li>
-            </ul>
-          </div>
+
         </div>
-      </nav><!-- Navbar End -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Doctors</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Blog</a>
+          </li>
 
 
-      <div id="main" class="main">
-        <div class="home">
-          <div class="container">
-            <div class="hero-content wow fadeIn">
-              <div class="flex-split">
-                <div class="container">
-                  <div class="f-image f-image-inverted">
-                    <img class="img-fluid" src="static/images/banner.png" alt="Feature">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="flex-inner flex-inverted align-center">
-                    <div class="f-text">
-                      <div class="left-content">
-                        <h4>Find the best candidates!</h4>
-                        <h2>Climax Resourcing is the right choice for you</h2>
-                        <a class="btn-action btn-outline nav-link js-scroll-trigger" href="#features">See More</a>
-                        <a class="btn-action" href="/contact">Contact Us</a>
-                      </div>
-                      <p class="condition_txt">Speed and Satisfaction<br> Guaranteed</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- Hero End -->
+        </ul>
 
-        <!--- Find a job Section -->
-        <br>
-        <br>
-        <br>
-        <div class="containerr">
-          <div class="form-containerr">
-            <div class="left-containerr">
-              <div class="left-inner-containerr">
-              <h2>Find your dream job</h2>
-              <br>
-              <p id="demo"></p>
-              <br>
-            </div>
-            </div>
-            <div class="right-containerr" id="searchnow">
-              <div class="right-inner-containerr">
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Contact us</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./static/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">Welcome To Climaxx</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              Find your dream <br>
+              JOB.
+            </h1>
+
+            <div class="hero-card" data-reveal="left">
+
+              <p class="title-lg card-text">
+                Search doctors. clinics. hospitals. etc.
+              </p>
+
               <form action="/search" method="POST">
-                <strong><h2 class="lg-view" style="color: #383B61;">Fill in the form</h2></strong>
-                <h2 class="sm-view">Find your dream job</h2>
-                <div class="social-containerr">
-                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <div class="wrapper">
+                  <!--<div class="input-wrapper title-lg">
+                    <input type="text" name="location" placeholder="Locations" class="input-field">
+
+                    <ion-icon name="location"></ion-icon>
+                  </div>-->
+
+                  
+                    <button type="submit" class="btn has-before">
+                      <ion-icon name="search"></ion-icon>
+
+                      <span class="span title-md">Find Now</span>
+                    </button>
                 </div>
-                <input type="text" placeholder="Job title / Keywords" name="keywords" id="keywords"/>
-                <select placeholder="Occupation" name="occupation" id="occ">
-                  <option value="" disabled selected style="color: #999;">Occupation</option>
-                  <option value="ahp">AHP</option>
-                  <option value="doctors">Doctors</option>
-                  <option value="dental">Dental</option>
-                  <option value="midwifery">Midwifery</option>
-                  <option value="social_care">Social Care</option>
-                  <option value="nursing">Nursing</option>
-                </select>
-                <select placeholder="Speciality" name="specialty" id="spec">
-                    <option value="" disabled selected style="color: #999;">Specialty</option>
-                </select>
-                <input type="text" placeholder="Location" name="location" id="location"/>
-                <br>
-                <br>
-                <button type="submit" onclick="storeData()">Search</button>
               </form>
-              </div>
+
             </div>
+
           </div>
+
+          <figure class="hero-banner" data-reveal="right">
+            <img src="./static/images/hero-banner.png" width="590" height="517" loading="eager" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Psychiatry</a>
+                </h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+
+                <button class="btn-circle" aria-label="read more about psychiatry">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Gynecology</a>
+                </h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Gynecology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Pulmonology</a>
+                </h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Pulmonology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Orthopedics</a>
+                </h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Orthopedics">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
+
+            <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+
+            <p class="section-text" data-reveal="left">
+              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
+              Aliquam
+            </p>
+
+            <ul class="tab-list" data-reveal="left">
+
+              <li>
+                <button class="tab-btn active">Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Strategy</button>
+              </li>
+
+            </ul>
+
+            <p class="tab-text" data-reveal="left">
+              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
+              Aliquam a bibendum mi, sed condimentum
+            </p>
+
+            <div class="wrapper">
+
+              <ul class="about-list">
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Sonsectetur adipisicing elit</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Exercitation ullamco laboris</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Eiusmod tempor incididunt</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Aolore magna aliqua</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="right">
+            <img src="./static/images/about-banner.png" width="554" height="678" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #LISTING
+      -->
+
+      <section class="section listing" aria-labelledby="listing-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listig</p>
+
+              <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Psychiatry</h3>
+
+                  <p class="card-text">Porta velit</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Gynecology</h3>
+
+                  <p class="card-text">Mattis augue</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Pulmonology</h3>
+
+                  <p class="card-text">Mauris laoreet</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Orthopedics</h3>
+
+                  <p class="card-text">Convallis vulputate</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Pediatrics</h3>
+
+                  <p class="card-text">Posuere maecenas</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./static/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Osteology</h3>
+
+                  <p class="card-text">Nisi nullam</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+            News & Article
+          </p>
+
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Latest Articles</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+
+                    <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div>
+
+                </div>
+
+                <h3 class="headline-sm card-title">Could intermittent fasting reduce breast cancer</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+
+                    <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div>
+
+                </div>
+
+                <h3 class="headline-sm card-title">Give children more autonomy during the pandemic</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+
+                    <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div>
+
+                </div>
+
+                <h3 class="headline-sm card-title">How do binge eating and drinking impact the liver?</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./static/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="#" class="logo">
+            <img src="./static/images/logo.svg" width="136" height="46" loading="lazy" alt="Climaxx home">
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="mail-open-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Main Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
+                </p>
+
+                <p>
+                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                </p>
+
+                <p>
+                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
         </div>
 
-        <!--- About Section -->
-        <div class="yd-cat">
-          <div class="container">
-            <div class="cat-inner">
-              <div class="cat-flex">
-                <div class="cat2" style="text-align: center;">
-                  <h4>How we help you find the best candidates.</h4>
-                  <h2>Connect Hiring managers with talents related to the medical field</h2>
-                  <p> Don't waste any more time, find the perfect candidates now!</p>
-                </div>
-                <div class="cat2" style="margin: auto;text-align: center;">
-                  <h2>Are you an employer?</h2>
-                  <p>Post a job advertisment and find the right people for your business.</p>
-                  <a href="/recruit" target="blank"><button style="margin-left: 50%;">Recruit now</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">About Us</p>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          </p>
+
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span class="text">
+              2416 Mapleview Drive <br>
+              Tampa, FL 33634
+            </span>
+          </address>
+
         </div>
 
-         <!--- Categories Section -->
-         <div class="container" >
-          <!--<h2 style="color: #383B61;">Doctor Jobs</h2>-->
-          <div class="row">
-              <div class="splide">
-                  <div class="splide__track" style="background-color: #f0f5f9; padding-bottom: 5px; padding-top: 5px;">
-                    <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #21bf73; padding: 5px; font-family: 'Montserrat';">
-                        Featured Jobs
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item"  style="color: #383B61; font-family: sans-serif;">Dental Jobs</a>
-                        <a class="dropdown-item"  style="color: #383B61; font-family: sans-serif;">Doctor Jobs</a>
-                        <a class="dropdown-item" style="color: #383B61; font-family: sans-serif;">Midwifery Jobs</a>
-                        <a class="dropdown-item" style="color: #383B61; font-family: sans-serif;">Nursing Jobs</a>
-                        <a class="dropdown-item"  style="color: #383B61; font-family: sans-serif;">Social Care Jobs</a>
-                      </div>
-                    </div>
-                    <br>
-                    <br>
-                      <ul class="splide__list">
-                        {% for i in features %}
-                          <div class="col-sm-4 splide__slide m-2">
-                              <div class="card bg-light text-white">
-                                <li class="splide__slide">
-                                  <div class="card-body">
-                                      <h5 class="card-title" style="color: #333347; font-weight: 600;">{{i.staff_type}}</h5>
-                                      <a href="/apply/{{i.id}}"><h5 class="card-title" style="color: #333347; font-weight: 600; text-transform: capitalize;">{{i.staff_type}}-{{i.specialty}}</h5></a>
-                                      <br>
-                                      <h6 class="card-subtitle mb-2 text-muted">job desciption</h6>
-                                      <p class="card-text" style="color: black;">{{i.job_desc}}</p>
-                                      <hr>
-                                      <ul>
-                                        <li>
-                                          <a href="#" class="card-text" style="font-family: 'Montserrat'; margin-top: 10px;">{{i.location}}</a><br>
-                                        </li>
-                                        <li>
-                                          <a href="#" class="card-text" style="font-family: 'Montserrat'; margin-top: 10px;">{{i.salary}}/{{i.salary_per}}</a><br>
-                                        </li>
-                                        <li>
-                                          <a href="#" class="card-text" style="font-family: 'Montserrat'; margin-top: 10px;">{{i.contract_length}}</a><br>
-                                        </li>
-                                      </ul>
-                                      <br>
-                                      <br>
-                                      <a href="/apply/{{i.id}}" class="btn btn-primary" style="background-color: #21bf73; font-family: 'Montserrat';">Read more</a>
-                                  </div>
-                                </li>
-                                  <br>
-                                <br>
-                              </div>
-                              </div>
-                      {% endfor %}
-                    </ul>
-              </div>
-          </div>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
+        <ul class="footer-list" data-reveal="bottom">
 
+          <li>
+            <p class="headline-sm footer-list-title">Services</p>
+          </li>
 
-        <!-- Features Section -->
-        <div id="features" class="ft-flex">
-          <div class="container">
-            <div class="ft-inner align-center">
-              <div class="ft-image wow">
-                <img class="img-fluid" src="static/images/support.png" alt="Feature">
-              </div>
-              <div class="ft-text">
-                <div class="ft-content">
-                  <h2>Network</h2>
-                  <p> Access to 12,000</p>
-                  <ul>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> Realtime broadcasts </li>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> Upload and sit tight </li>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> View realtime stats</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <li>
+            <a href="#" class="text footer-link">Conditions</a>
+          </li>
 
-            <div class="ft-inner ft-inverted align-center">
-              <div class="ft-image f-image-inverted">
-                <img class="img-fluid" src="static/images/write.png" alt="Feature">
-              </div>
-              <div class="ft-text">
-                <div class="ft-content">
-                  <h2>High Definition</h2>
-                  <p> When you get staright to the point the presentation looks attractive on your web pages.</p>
-                  <ul>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> Realtime broadcast </li>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> View realtime stats </li>
-                    <li><img src="static/icons/tick.svg" alt="Tick"> Upload and sit tight </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <li>
+            <a href="#" class="text footer-link">Listing</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">How It Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">What We Offer</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Latest News</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Join as a Doctor</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">New Guests List</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">The Team List</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Subscribe</p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+
+            <button type="submit" class="btn has-before title-md">Subscribe</button>
+          </form>
+
+          <p class="text">
+            Get the latest updates via email. Any time you may unsubscribe
+          </p>
+
         </div>
 
+      </div>
 
-        <!-- Counter Section -->
-        <div class="yd-stats">
-          <div class="container-s">
-            <div class="row text-center">
-             <div class="col-sm-12">
-                <div class="intro">
-                  <h4>OUR RESULTS</h4>
-                  <h2>Our awesome results worth displaying</h2>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="static/icons/f1.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">47</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Mobile Users</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="static/icons/f2.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">33</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Daily Views</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="static/icons/f3.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">28</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Monthly Returns</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="static/icons/f4.png" alt="Icon">
-                  </div>
-                  <h3><span class="counter">349</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Annual Growth</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- Counter Section Ends -->
+      <div class="footer-bottom">
 
+        <p class="text copyright">
+          &copy; Climaxx 2022 | All Rights Reserved by codewithsadee
+        </p>
 
-        <!-- YD Flex Grid Section -->
-        <div id="reviews" class="yd_reviews">
-          <div class="container">
-            <div class="yd_rev_inner">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="rev-intro">
-                    <h2>Stories from our customers</h2>
-                    <p> When you get staright to the point the presentation looks attractive.</p>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="rev-list owl-carousel owl-theme">
-                    <div class="rev-block">
-                      <img src="static/icons/quote.svg" width="60" alt="Quote">
-                      <h2>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. We use Climax for key for easy and seamless weekly communication with our clients and .</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="static/icons/rev.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>Marty McFly</h3>
-                          <p>Head of OP, <a href="#">Future LLC</a></p>
-                        </div>
-                      </div>
-                    </div>
+        <ul class="social-list">
 
-                    <div class="rev-block">
-                      <img src="static/icons/quote.svg" width="60" alt="Quote">
-                      <h2> Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. We use Climax for key for easy and seamless weekly communication with our clients.</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="static/icons/rev2.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>Dr. Strange</h3>
-                          <p>CTO, <a href="#">Arma Systems</a></p>
-                        </div>
-                      </div>
-                    </div>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-                    <div class="rev-block">
-                      <img src="static/icons/quote.svg" width="60" alt="Quote">
-                      <h2>We use Climax for key for easy and seamless weekly communication with our clients. Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="static/icons/rev3.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>John Kennedy</h3>
-                          <p>Manager Sales, <a href="#">Optima Corp</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-        <!-- Faq Section -->
-        <div id="faqs" class="yd_faqs">
-          <div class="container">
-            <div class="faq_inner">
-              <div class="col-md-10 offset-md-1">
-                <div class="faq_intro">
-                  <h2>Frequently Asked Queries</h2>
-                  <p>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
-                  <h5>Still have questions?</h5> <a class="link-btm" href="#">Contact us</a>
-                </div>
-                <div id="accordion">
-                  <div class="row">
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                          <a class="card-title">What is Climax?</a>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
-                          <a class="card-title">How much does template cost?</a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
-                          <a class="card-title">How can updates be downloaded?</a>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
-                          <a class="card-title">Some other Support related queries.</a>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- Faq Section End -->
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
 
 
 
-        <div id="cta" class="yd_cta_box">
-          <div class="container">
-            <div class="cta_box">
-              <div class="cta_box_inner">
-                <div class="col-sm-12 col-md-12">
-                  <h4>start your trial</h4>
-                  <h2>Climax is made just for you. Ready to build your next project?</h2>
-                  <div class="form">
-                    <form id="chimp-form" class="subscribe-form" action="assets/php/subscribe.php" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-                      <input class="mail" id="chimp-email" type="email" name="email" placeholder="Enter email address" autocomplete="off"><input class="submit-button" type="submit" value="Sign Up">
-                    </form>
-                   <div id="response"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- Main -->
-              <!-- Footer -->
-              <div class="footer">
-                <div class="container">
-                  <div class="row text-center">
-                    <div class="col-lg-2 col-md-3 col-sm-12">
-                      <div class="footer-logo">
-                        <h2>C O N N E C T.</h2>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <ul class="footer-menu">
-                        <li><a href="/about_us">About</a> </li>
-                        <li><a href="/privacy">Privacy</a> </li>
-                        <li><a href="/terms">Terms</a> </li>
-                        <li><a href="/cookies">Cookies</a> </li>
-                        <li><a href="/capacity_project">Capacity projects</a> </li>
-                        <li><a href="/support">24h support</a> </li>
-                        <li><a href="/temp_staff">Staffing Solutions</a> </li>
-                        <li><a href="/contact">Contact</a> </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-sm-12">
-                      <div class="footer-links">
-                        <ul>
-                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i1.png" alt="Icon"> </a> </li>
-                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i2.png" alt="Icon"> </a> </li>
-                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i3.png" alt="Icon"> </a> </li>
-                          <li><a href="#main"> <img class="img-fluid" src="static/icons/i4.png" alt="Icon"> </a> </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Scroll To Top -->
-                    <a id="back-top" class="back-to-top js-scroll-trigger" href="#main"></a>
-                <!-- Scroll To Top Ends-->
-                </div>
-              </div>
-    </div><!-- Wrapper -->
 
 
-    <!-- Jquery and Js Plugins -->
-    <script src="../static/js/jquery-2.1.1.js"></script>
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/jquery.validate.min.js"></script>
-    <script src="../static/js/plugins.js"></script>
-    <script src="../static/js/custom.js"></script>
-    <script src="../static/js/typing.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-    <script src="../static/js/options.js"></script>
-    <script>
-            var splide = new Splide('.splide', {
-                type: 'loop',
-                perPage: 3,
-                rewind: true,
-                breakpoints: {
-                    640: {
-                        perPage: 2,
-                        gap: '.7rem',
-                        height: '16rem',
-                    },
-                    480: {
-                        perPage: 1,
-                        gap: '.7rem',
-                        height: '16rem',
-                    },
-                },
-            });
-            splide.mount();
-    </script>
-    <script>
-      function storeData() {
-        var keywords = document.getElementById("keywords").value;
-        var occupation = document.getElementById("occ").value;
-        var speciality = document.getElementById("spec").value;
-        var location = document.getElementById("location").value;
+  <!-- 
+    - #BACK TO TOP
+  -->
 
-        localStorage.setItem("keyword", keywords);
-        localStorage.setItem("occupation", occupation);
-        localStorage.setItem("speciality", speciality);
-        localStorage.setItem("location", location);
-      }
-    </script>
-  </body>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./static/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
