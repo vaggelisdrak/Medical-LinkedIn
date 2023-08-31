@@ -114,7 +114,7 @@
                     <input type="text" placeholder="Last name" name="last_name" required/>
                     <input type="email" placeholder="Email address" name="email" required id="contact-user"/>
                     <input type="tel" placeholder="Phone number" name="phone_num" required/>
-                    <label for="file-upload" class="custom-file-upload" style="border: 1px solid hsl(182, 100%, 35%);
+                    <!--<label for="file-upload" class="custom-file-upload" style="border: 1px solid hsl(182, 100%, 35%);
                     display: inline-block;
                     padding: 6px 12px;
                     margin-top: 5px;
@@ -124,17 +124,22 @@
                     border-radius: 20px;
                     width: 150px;;
                     ">
-                    <!--<img src="../static/images/upload_cv-512.webp" style="width: 50px; height: 50px;" >-->
-                     Upload your CV 
-                    </label>
+                    <img src="../static/images/upload_cv-512.webp" style="width: 50px; height: 50px;" >-->
+
                     <!--<button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>-->
-                    <input id="file-upload" type="file" name="pdf" style="display: none;" accept=".pdf,.doc" required/>
+                    <input id="file-upload" type="file" name="pdf"  accept=".pdf,.doc" required/>
                     <br>
                     <br>
-                    <div class="g-recaptcha" style="transform:scale(0.80);-webkit-transform:scale(0.80);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LeoVfQhAAAAAL7F7s4Zq6YAGIsR3FfPGXq_JnK1" aria-required="true"></div>
+                    <div class="g-recaptcha" style="transform:scale(0.80);-webkit-transform:scale(0.80);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LeoVfQhAAAAAL7F7s4Zq6YAGIsR3FfPGXq_JnK1" aria-required="true" required></div>
                     <br>
                     <br>
                     <br>
+                    {% for message in get_flashed_messages() %}
+                      <div class="alert alert-info">
+                        {{ message }}
+                      
+                      </div>
+                    {% endfor %}
                     <button type="submit" style="width: 100%; background-color: hsl(182, 100%, 35%);;">Send application</button>
                   </form>
                   <p class="card-text" id="contact-message"></p>
@@ -181,5 +186,13 @@
     function onSubmit(token) {
         document.getElementById("demo-form").submit();
     }</script>
+    <script>
+      window.addEventListener('load', () => {
+          const $recaptcha = document.querySelector('#g-recaptcha-response');
+          if ($recaptcha) {
+            $recaptcha.setAttribute('required', 'required');
+          }
+        })
+    </script>
   </body>
 </html>

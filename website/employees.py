@@ -304,5 +304,5 @@ def send_app(id):
         ad = REQUESTS_database(first_name=first_name, last_name=last_name, email=email, phone_number = phone_number, job_id = job_id , filename=file.filename,data=file.read())
         db.session.add(ad)
         db.session.commit()
-        flash('Request submitted')
+        flash('Request submitted suuccessfully!')
         return redirect('/apply/'+str(id))
