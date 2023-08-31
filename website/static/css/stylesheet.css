@@ -506,7 +506,7 @@ h2 {
 .left-containerr {
   flex:1;
   height:500px;
-  background-color: #21bf73;
+  background-color: hsl(182, 100%, 35%);
 }
 .right-containerr {
   display:flex;
@@ -563,7 +563,7 @@ button {
 	border: 1px solid hsl(182, 100%, 35%);;
 	background-color: hsl(182, 100%, 35%);;
 	color: #FFFFFF;
-	font-size: 12px;
+	/*font-size: 12px;*/
 	font-weight: bold;
 	font-family: 'Montserrat';
 	padding: 12px 45px;
@@ -649,7 +649,7 @@ form p {
 	position: absolute;
 	width: 125px;
 	height: 100%;
-	background: linear-gradient(to left, #21bf73, rgb(255, 255, 255));
+	background: hsl(182, 100%, 35%);
 	border-radius: 30px;
 	transition: 0.5s;
 }
@@ -687,11 +687,11 @@ form p {
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to left, #21bf73, white);
+	background: hsl(182, 100%, 35%);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
-	color: #383B61;
+	color: white;
 }
 
 .check-box{
