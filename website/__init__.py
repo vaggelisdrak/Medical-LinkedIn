@@ -13,7 +13,10 @@ from werkzeug.utils import secure_filename
 import datetime
 from requests import get
 import json
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 
 db = SQLAlchemy(session_options={"autoflush": False})
 app = Flask(__name__)
@@ -30,8 +33,8 @@ if ENV == 'dev':
         MAIL_PORT = 587,
         MAIL_USE_TLS = True,
         MAIL_USE_SSL = False,
-        MAIL_USERNAME = 'v.drakontaeidis@gmail.com',
-        MAIL_PASSWORD = 'ynzfcugeohcgtunn',
+        MAIL_USERNAME = os.environ.get('MAIL_USERNAME'),
+        MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD'),
     ))
     mail = Mail(app)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///APP.db'
@@ -41,11 +44,11 @@ else:
     app.secret_key = os.environ.get('reCAPTCHA')
     app.config['MAIL_SERVER']='smtp.mailtrap.io'
     app.config['MAIL_PORT'] = 2525
-    app.config['MAIL_USERNAME'] = 'b33d1eb020da94'
+    app.config['MAIL_USERNAME'] = os.environ.get('email')
     app.config['MAIL_PASSWORD'] = os.environ.get('email_pass')
     app.config['MAIL_USE_TLS'] = True
     app.config['MAIL_USE_SSL'] = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://sgoszikolpwygi:9b3f54ad31819947ff5a863389cccec4b1027cb3a2caa78db7e32629b61f70c6@ec2-52-200-5-135.compute-1.amazonaws.com:5432/d508nba4ubkuoa'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PIPENV_IGNORE_VIRTUALENVS']=True
