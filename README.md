@@ -1,6 +1,4 @@
-# A full stack web application like LinkedIn but for medical staff for a client
-
-Most recent version climaxx-Copy (2)
+# A full stack web application like LinkedIn but for medical staff for the company Climaxx
 
 I Created the backend of an existing website using Python's Flask. It inlcudes:
 
