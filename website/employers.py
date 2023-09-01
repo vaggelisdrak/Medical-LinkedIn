@@ -198,22 +198,23 @@ def requests():
         for i in job_ads:
             print(i.id)
             req.append(REQUESTS_database.query.filter_by(job_id = i.id).all())
-        print(req)
+        print('req',req)
 
         requests = []
         for j in req:
             if j:
-                requests.append(j)
+                for k in j:
+                    requests.append(k)
         try:
-            r= requests[0]
+            r = requests
             print(requests[0])
             l=0
-            for i in r:
-                l+=1
+            for i in r:l+=1
         except:
             r = requests
             l=0
         print(l)
+        print('r',r)
         return render_template('requests.html',job_ads=job_ads, req=r, l=l)
 
 @employers.route('/edit/<int:id>', methods=['GET','POST'])
